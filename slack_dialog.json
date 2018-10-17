@@ -1,0 +1,70 @@
+{
+    "dialog":{
+                "title": "Let's Break Shit.",
+                "submit_label": "Submit",
+                "callback_id": "vertical_selection",
+                "elements": [
+                    {
+                        "label": "What're We Breakin'?",
+                        "type": "select",
+                        "name": "suite_preferences",
+                        "placeholder": "Select a test suite",
+                        "options": [
+                            {
+                                "label": "console_test",
+                                "value": "console_test"
+                            },
+                            {
+                                "label": "smoke_test",
+                                "value": "smoke_test"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Operate Systems",
+                        "type": "select",
+                        "name": "platform_preferences",
+                        "placeholder": "Select a platform",
+                        "options": [
+                            {
+                                "label": "Windows-8-Chrome",
+                                "value": "Windows-8-Chrome"
+                            },
+                            {
+                                "label": "web",
+                                "value": "web"
+                            },
+                            {
+                                "label": "mobile",
+                                "value": "mobile"
+                            },
+                            {
+                                 "label": "all",
+                                 "value": "all"
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Branchin' Out?",
+                        "type": "select",
+                        "name": "branch_preferences",
+                        "value": "master",
+                        "placeholder": "Selecy a git tree branch",
+                        "options": [
+                            {
+                                "label": "master",
+                                "value": "master"
+                            }
+                        ]
+                    },
+                    {
+                      "label": "Customize test url",
+                      "name": "url",
+                      "type": "text",
+                      "subtype": "url",
+                      "optional": true,
+                      "placeholder": "leave it empty if you don't have custom test url"
+                    }
+                ]
+            }
+}

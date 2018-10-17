@@ -1,0 +1,18 @@
+{
+    "attachments":[
+        {
+            "text": "",
+            "callback_id": "trigger_build",
+            "color": "#3AA3E3",
+            "attachment_type": "default",
+            "actions": [
+                {
+                    "name": "build_trigger",
+                    "text": ":beer_parrot: Custom build",
+                    "type": "button",
+                    "value": "custom_build"
+                }
+            ]
+        }
+    ]
+}
