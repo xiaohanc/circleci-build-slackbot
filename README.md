@@ -11,9 +11,11 @@ This service allows users to submit builds with custom parameters to circleci th
 * The bot is scalable, user could add more functions to interactive with slack buttons, redirect or call other apis like github, jira and so on.
 
 **Set up**
+
 User should firstly create app on [Slack apps](https://api.slack.com/apps), and generate auth token as `SLACK_BOT_TOKEN` from `https://api.slack.com/apps/:app_id/oauth?`. If User wants to add more button/slack command to interact with this flask app, channel_webhook could be get from `https://api.slack.com/apps/:app_id/incoming-webhooks?`
 
 **Deploy**
+
 Here is an example deploy to aws ec2 with ngrok tunnel, user also could set up devops with nginx, supervisord, ansible(deploy tokens) and so on.
 1.AWS 
 ssh -i circlecitest.pem ubuntu@xxx.compute-1.amazonaws.com to aws
