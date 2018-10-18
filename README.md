@@ -26,7 +26,7 @@ export SLACK_BOT_TOKEN=""
 ```
 3.nohup run server
 ```
-nohup python3 circleci_slack_api.py & ./ngrok http 5000 &
+nohup python3 main.py & ./ngrok http 5000 &
 ```
 4.check ngrok server url and add it to slack circle bot
 ```
